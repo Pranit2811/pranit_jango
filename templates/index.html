@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Hello, world!</title>
+</head>
+{% extends 'base.html' %} {% block body %}
+
+<body class="bg-dark">
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" class='bg-danger' data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" class='bg-danger' data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/IMG/Slider_1.jfif" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Example headline.</h1>
+                            <p>Some representative placeholder content for the first slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-outline-danger shadow-lg" href="/form">Enroll Today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/IMG/Slider_2.jfif" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-outline-danger" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- https://source.unsplash.com/random/1900x650/?gym -->
+                <div class="carousel-item">
+                    <img src="/static/IMG/Slider_4.jfif" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                            <p><a class="btn btn-lg btn-outline-danger" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+  ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div id="trainers" class="container marketing mt-5">
+            <h2 class="text-white text-center fw-normal display-5">Our Best Trainers</h2>
+            <!-- Three columns of text below the carousel -->
+            <div class="row ">
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" src="/static/IMG/trainer_1.jfif" alt="">
+                    <h2 class="text-danger">Heading</h2>
+                    <p class="text-white">Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                    <p><a class="btn btn-outline-danger" href="#">View details &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" src="/static/IMG/trainer_2.jfif" alt="">
+
+                    <h2 class="text-danger">Heading</h2>
+                    <p class="text-white">Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                    <p><a class="btn btn-outline-danger" href="#">View details &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" src="/static/IMG/trainer_3.jfif" alt="">
+
+                    <h2 class="text-danger">Heading</h2>
+                    <p class="text-white">And lastly this, the third column of representative placeholder content. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p><a class="btn btn-outline-danger" href="#">View details &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div id="about" class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading text-white display-5 fw-normal" align='center'>About Us</h2>
+                    <p class="lead text-white">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://source.unsplash.com/random/500x500/?yoga" alt="">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+            <!-- price -->
+            <header id="plans">
+                <!-- <h2 class="text-white-50" align='center'>Our Plans</h2> -->
+                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <h2 class="display-5 fw-normal text-white">Our Plans</h4>
+                        <!-- <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p> -->
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-lg border-danger">
+                            <div class="card-header py-3 text-white bg-dark border-danger">
+                                <h4 class="my-0 fw-normal">3 Months</h4>
+                            </div>
+                            <div class="card-body text-white bg-dark">
+
+                                <!-- <style>
+                                    i {
+                                        color: red;
+                                    }
+                                </style> -->
+                                <h1 class="card-title pricing-card-title text-danger">₹9000/<small class="text-white fw-light h5"><del>₹12000</del></small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <style>
+                                        li {
+                                            color: red;
+                                        }
+                                    </style>
+                                    <li><i class="fad fa-check fa-2x"></i> Training Overview</li>
+                                    <li><i class="fad fa-check fa-2x"></i> 24/7 Gym Access</li>
+                                    <li><i class="fad fa-times fa-2x"></i> Locker/Wifi Free</li>
+                                    <li><i class="fad fa-times fa-2x"></i> Personal Trainer</li>
+                                </ul>
+                                <a href='/form' type="button" class="w-100 btn btn-lg btn-outline-danger">Enroll Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-danger">
+                            <div class="card-header py-3 text-white bg-dark border-danger">
+                                <h4 class="my-0 fw-normal">6 Months</h4>
+                            </div>
+                            <div class="card-body text-white bg-dark">
+                                <h1 class="card-title pricing-card-title text-danger">₹12000/<small class="text-white fw-light h5"><del>₹25000</del></small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li><i class="fad fa-check fa-2x"></i> Training Overview</li>
+                                    <li><i class="fad fa-check fa-2x"></i> 24/7 Gym Access</li>
+                                    <li><i class="fad fa-check fa-2x"></i> Locker/Wifi Free</li>
+                                    <li><i class="fad fa-times fa-2x"></i> Personal Trainer</li>
+                                </ul>
+                                <a href='/form' type="" class="w-100 btn btn-lg btn-outline-danger">Get started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm border-danger">
+                            <div class="card-header py-3 text-white bg-dark border-danger">
+                                <h4 class="my-0 fw-normal">12 Months</h4>
+                            </div>
+                            <div class="card-body bg-dark text-white">
+                                <h1 class="card-title pricing-card-title text-danger">₹15000/<small class="text-white fw-light h5"><del>₹40000</del></small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li><i class="fad fa-check fa-2x"></i> Training Overview</li>
+                                    <li><i class="fad fa-check fa-2x"></i> 24/7 Gym Access</li>
+                                    <li><i class="fad fa-check fa-2x"></i> Locker/Wifi Free</li>
+                                    <li><i class="fad fa-check fa-2x"></i> Personal Trainer</li>
+                                </ul>
+                                <a type="button" class="w-100 btn btn-lg btn-outline-danger shadow-sm">Contact
+                                    us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <hr class="featurette-divider">
+
+            <!-- Opening Hours -->
+
+            <h1 class="display-5 fw-normal text-white text-center">Opening Hours</h1>
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <div class="table-responsive table-sm">
+                        <table class="table text-center text-white table-bordered border-danger">
+                            <thead>
+                                <tr>
+                                    <th style="width: 22%;">Day</th>
+                                    <th style="width: 22%;">Time</th>
+                                    <th style="width: 22%;">Available Trainer</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="text-start text-center text-white">Monday</th>
+                                    <td class="text-white">6 AM-10 PM</td>
+                                    <td class="text-white">Sangram Chougule, Sunit Jadhav</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start text-center text-white">Tuesday</th>
+                                    <td class="text-white">6 AM-10 PM</td>
+                                    <td class="text-white">Sangram Chougule, Sunit Jadhav</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start text-center text-white">Wednesday</th>
+                                    <td class="text-white">6 AM-10 PM</td>
+                                    <td class="text-white">Sangram Chougule, Sunit Jadhav</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start text-center text-white">Thursday</th>
+                                    <td class="text-white">6 AM-10 PM</td>
+                                    <td class="text-white">Sangram Chougule, Sunit Jadhav</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start text-center text-white"> Friday</th>
+                                    <td class="text-white">6 AM-10 PM</td>
+                                    <td class="text-white">Sangram Chougule</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start text-center text-white">Saturday</th>
+                                    <td class="text-white">6 AM-10 PM</td>
+                                    <td class="text-white">Sunit Jadhav</td>>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-start text-center text-white">Sunday</th>
+                                    <td class="text-white">9 AM-12 PM</td>
+                                    <td class="text-white">Sangram Chougule, Sunit Jadhav</td>>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <div class="col-md-5 ">
+                        <img src="/static/IMG/Time_Table.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+        <!-- /.container -->
+
+
+
+    </main>
+    {% endblock body %}
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="bg-dark">
+    {% extends 'base.html' %} {% block body %}
+
+    <div class="container-fluid p-5 mt-5 w-50 text-white">
+        <div class="container">
+            {% if messages %} {% for message in messages %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <li{% if message.tags %} class="{{ message.tags }}" {% endif %}> <strong>{{ message }}</strong> </li>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %} {% endif %}
+        </div>
+        <h2 class="text-white" align='center'>Enroll Form</h2>
+        <form method="post" action="/form">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="exampleInput" name='ename' aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInput" class="form-label">Mobile Number </label>
+                <input type="phone" name="num" class="form-control" id="exampleInput">
+            </div>
+            <label for="form-select " class="form-label mb-3">Gender
+
+                <select class="form-select" aria-label="Default select example" name='gender'>
+
+                    <option class="Default" selected>select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </label>
+
+            <div class="mb-3">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" name="address" id="inputAddress" placeholder="1234 Main St">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Tell why you deserve to be in the Grace
+                    Transformation Challenge</label>
+                <textarea class="form-control" name="comment" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <label for="form-select " class="form-label mb-3">Select Your Plans
+
+                <select class="form-select" aria-label="Default select example" name='plans'>
+
+                    <option class="Default" selected>select Plans</option>
+                    <option value="3 Months">3 Months</option>
+                    <option value="6 Months">6 Months</option>
+                    <option value="12 Months">12</option>
+                </select> 
+            </label>
+            <div class="mb-3">
+
+                <button type="submit" class="btn btn-danger shadow" align='center'>Submit</button>
+            </div>
+        </form>
+
+    </div>
+    {% endblock body %}
+</body>
+
+</html>
