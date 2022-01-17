@@ -23,7 +23,7 @@ from django.views.static import serve
 from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')),
+    path('index', include('home.urls')),
     path('form', include('home.urls')),
     path('sign_in', include('home.urls')),
     path('logoutuser', include('home.urls')),
