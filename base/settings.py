@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-5i^p)8!5%#61y(2vvj)!_0iw#&_=-c%7^^5b06y=(%9)*6y*8a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','pranitapp.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1','pranitapp.herokuapp.com']
 
 
 # Application definition
